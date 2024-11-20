@@ -13,7 +13,7 @@ export default function Home() {
 
   // Countdown logic
   useEffect(() => {
-    const targetDate = new Date("2024-11-20T17:25:00");
+    const targetDate = new Date("2024-11-21T00:00:00");
     const timer = setInterval(() => {
       const now = new Date();
       const difference = targetDate - now;
