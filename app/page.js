@@ -118,7 +118,7 @@ export default function Home() {
       <div className="text-center bg-white p-6 rounded-lg shadow-xl mb-20 max-w-lg mx-auto">
         <h2 className="text-3xl font-semibold text-purple-700 mb-4">Countdown to Your Big Day!</h2>
         {!showCelebration ? (
-          <div className="mt-4 text-2xl font-mono flex justify-center gap-4">
+          <div className="mt-4 text-2xl font-mono flex justify-center gap-4 text-black">
             <span className="px-6 py-3 bg-purple-100 rounded-lg shadow-lg">{timeLeft.days}d</span>
             <span className="px-6 py-3 bg-purple-100 rounded-lg shadow-lg">{timeLeft.hours}h</span>
             <span className="px-6 py-3 bg-purple-100 rounded-lg shadow-lg">{timeLeft.minutes}m</span>
