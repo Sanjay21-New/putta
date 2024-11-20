@@ -1,9 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
+
 
 export default function Home() {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
@@ -43,30 +41,6 @@ export default function Home() {
     "/us/us9.jpg",
   ];
 
-  const settings = {
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
 
 
   const sendBirthdayEmail = async () => {
@@ -81,7 +55,7 @@ export default function Home() {
       With all my love,
       Your forever friend, Sanju (Putta’s number one fan)
     `;
-  
+
     try {
       const response = await fetch('/api/sendEmail', {
         method: 'POST',
@@ -94,9 +68,9 @@ export default function Home() {
           recipientEmail: 'shreyahegde281@gmail.com', // Replace with actual recipient email
         }),
       });
-  
+
       const data = await response.json();
-  
+
       if (data.success) {
         console.log('Email sent successfully');
       } else {
@@ -106,7 +80,7 @@ export default function Home() {
       console.error('Error sending email:', error);
     }
   };
-  
+
   const handleStartCelebration = () => {
     // Trigger music play after user clicks
     if (audioRef.current) {
@@ -165,9 +139,12 @@ export default function Home() {
 
       {/* Image Slider */}
       <div className="max-w-screen-lg mx-auto p-2 mb-12">
-        <Slider {...settings}>
+        <div className="grid grid-flow-col  gap-4">
           {images.map((src, index) => (
-            <div key={index} className="relative p-2 w-full aspect-square rounded-lg overflow-hidden shadow-md hover:scale-105 transition-transform duration-500">
+            <div
+              key={index}
+              className="relative aspect-square rounded-lg overflow-hidden shadow-md hover:scale-105 transition-transform duration-500"
+            >
               <Image
                 src={src}
                 alt={`Image ${index + 1}`}
@@ -177,8 +154,9 @@ export default function Home() {
               />
             </div>
           ))}
-        </Slider>
+        </div>
       </div>
+
 
       {/* Birthday Message */}
       <div className="text-center mb-6">
@@ -187,12 +165,7 @@ export default function Home() {
         </p>
       </div>
 
-      {/* Footer */}
-      <footer className="fixed bottom-0 w-full text-center text-white py-4 bg-gradient-to-t from-purple-600 to-transparent">
-        <p className="text-lg">
-          Made with ❤️ for Shreya
-        </p>
-      </footer>
+
 
       {/* Background Music */}
       <audio ref={audioRef}>
