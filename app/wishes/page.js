@@ -58,18 +58,18 @@ export default function MakeAWishPage() {
                             My dearest Putta,
                         </p>
                         <p className="mt-4">
-                            I hope this letter finds you in the best of health and spirits. I’ve been thinking a lot about how lucky I am to have you in my life. You have a heart that shines brighter than the stars, and your presence makes the world a better place. I just wanted to take a moment to send you my warmest and most heartfelt wishes. May this year bring you endless joy, love, and unforgettable moments. You deserve all the happiness in the world, and more.
+                            I hope this letter finds you in the best of health and spirits. I&apos;ve been thinking a lot about how lucky I am to have you in my life. You have a heart that shines brighter than the stars, and your presence makes the world a better place. I just wanted to take a moment to send you my warmest and most heartfelt wishes. May this year bring you endless joy, love, and unforgettable moments. You deserve all the happiness in the world, and more.
                         </p>
                         <p className="mt-4">
-                            I am so grateful for the laughter, the adventures, and the memories we've created together. The bond we share is something truly special, and I wouldn't trade it for anything. You have an incredible way of making everything better just by being you. You inspire me every single day, Putta, and I am in awe of the way you chase your dreams with so much passion and strength.
+                            I am so grateful for the laughter, the adventures, and the memories we&apos;ve created together. The bond we share is something truly special, and I wouldn&apos;t trade it for anything. You have an incredible way of making everything better just by being you. You inspire me every single day, Putta, and I am in awe of the way you chase your dreams with so much passion and strength.
                         </p>
                         <p className="mt-4">
-                            Your kindness and your beautiful soul touch everyone around you, and I feel blessed to be one of those people. I have no doubt that the universe has amazing things in store for you. Whatever you set your mind to, I know you'll accomplish, because you are nothing short of amazing.
+                            Your kindness and your beautiful soul touch everyone around you, and I feel blessed to be one of those people. I have no doubt that the universe has amazing things in store for you. Whatever you set your mind to, I know you&apos;ll accomplish, because you are nothing short of amazing.
                         </p>
                         <p className="mt-6">
                             With all my love,
                             <br />
-                            Your forever friend, Sanju (Putta’s number one fan)
+                            Your forever friend, Sanju (Putta&apos;s number one fan)
                         </p>
                     </div>
 
